@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.davidcryer.gameapplication170715.NaughtsAndCrossesActivity">
+
+    <LinearLayout android:id="@+id/n_and_c_lin_layout_text"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <TextView android:id="@+id/n_and_c_text_player_one_wins"
+            android:text="@string/player_one_no_of_wins_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/n_and_c_text_player_one_wins_numbers"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/n_and_c_text_player_one_wins"/>
+
+        <TextView android:id="@+id/n_and_c_text_player_two_wins"
+            android:text="@string/player_two_no_of_wins_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/n_and_c_text_player_one_wins_numbers"/>
+
+        <TextView android:id="@+id/n_and_c_text_player_two_wins_numbers"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/n_and_c_text_player_two_wins"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/n_and_c_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/n_and_c_lin_layout_text">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button android:id="@+id/n_and_c_button_1"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_1_click"/>
+            <Button android:id="@+id/n_and_c_button_2"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_2_click"/>
+            <Button android:id="@+id/n_and_c_button_3"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_3_click"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button android:id="@+id/n_and_c_button_4"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_4_click"/>
+            <Button android:id="@+id/n_and_c_button_5"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_5_click"/>
+            <Button android:id="@+id/n_and_c_button_6"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_6_click"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button android:id="@+id/n_and_c_button_7"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_7_click"/>
+            <Button android:id="@+id/n_and_c_button_8"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_8_click"/>
+            <Button android:id="@+id/n_and_c_button_9"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="120dip"
+                android:onClick="n_and_c_button_9_click"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

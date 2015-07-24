@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:id="@+id/main_menu_text_menu"
+        android:text="@string/main_menu_question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button android:id="@+id/main_menu_button_connect_four"
+        android:layout_width="300dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"
+        android:text="@string/main_menu_button_connect_four"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="main_menu_clickStart_c_f"/>
+
+    <Button android:id="@+id/main_menu_button_n_and_c"
+        android:layout_width="300dip"
+        android:layout_height="100dip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/main_menu_button_connect_four"
+        android:text="@string/main_menu_button_n_and_c"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="main_menu_clickStart_n_and_c"/>
+
+    <Button android:id="@+id/main_menu_button_chess"
+        android:layout_width="300dip"
+        android:layout_height="100dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_menu_button_connect_four"
+        android:text="@string/main_menu_button_chess"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="main_menu_clickStart_chess"/>
+
+    <TextView android:id="@+id/main_menu_text_whaaat"
+        android:text="@string/main_menu_whaaat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/main_menu_button_chess"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</RelativeLayout>

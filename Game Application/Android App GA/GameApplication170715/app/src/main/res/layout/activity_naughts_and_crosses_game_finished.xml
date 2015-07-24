@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.davidcryer.gameapplication170715.NaughtsAndCrossesGameFinishedActivity">
+
+    <TextView android:id="@+id/n_and_c_game_finished_announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/n_and_c_play_again_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/n_and_c_game_finished_announcement"
+        android:text="Play again?"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/n_and_c_play_again_question">
+
+        <Button android:id="@+id/n_and_c_button_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:onClick="n_and_c_button_yes_click"/>
+
+        <Button android:id="@+id/n_and_c_button_no_CF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:onClick="n_and_c_button_no_click"/>
+    </LinearLayout>
+
+</RelativeLayout>
