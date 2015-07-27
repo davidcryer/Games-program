@@ -26,12 +26,10 @@ int main(int argc, const char * argv[]) {
     while (!stop_playing) {
         game* game1(nullptr);
         std::string game_choice_response;
-        bool valid_game_choice_response(false);
-        while (!valid_game_choice_response) {
+        while (!game1) {
             std::cout<<"What game would you like to play? (N)oughts and Crosses, Connect (F)our, (C)hess: ";
             std::cin>>game_choice_response;
             if (game_choice_response=="N"||game_choice_response=="F"||game_choice_response=="C") {
-                valid_game_choice_response=true;
                 if (game_choice_response=="N")
                     game1 = new naughts_and_crosses;
                 else if (game_choice_response=="F")
