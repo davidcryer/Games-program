@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     
     bool stop_playing(false);
     while (!stop_playing) {
-        game* game1(0);
+        game* game1(nullptr);
         std::string game_choice_response;
         bool valid_game_choice_response(false);
         while (!valid_game_choice_response) {
